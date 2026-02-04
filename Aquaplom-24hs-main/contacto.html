@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Aquaplom 24hs</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="carpeta1/icono .ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <div class="caja">
+        <div class="header-content">
+            <img src="carpeta1/moto-negra.jpg" alt="logo de moto azul" id="logo-header">
+            <h2>AQUAPLOM 24HS</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="productos.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="formulario-contacto"> 
+        <!-- FORMULARIO FUNCIONAL -->
+        <form action="https://formspree.io/f/xkozlrkr" method="POST">
+
+
+            <label for="nombreapellido"><strong>Nombre y Apellido</strong></label>
+            <input type="text" id="nombreapellido" name="nombre" class="input-padron" required>
+
+            <label for="correoelectronico"><strong>Correo Electrónico</strong></label>
+            <input type="email" id="correoelectronico" name="email" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono"><strong>Teléfono</strong></label>
+            <input type="tel" id="telefono" name="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+            <label for="mensaje"><strong>Mensaje</strong></label>
+            <textarea cols="70" rows="10" id="mensaje" name="mensaje" class="input-padron" required></textarea>
+
+            <fieldset>
+                <legend><strong>¿Cómo le gustaría que lo contactemos?</strong></legend>
+                <label>
+                    <input type="radio" name="contacto" value="Email"> Email
+                </label>
+            </fieldset>
+
+            <fieldset class="horario-atencion">
+                <legend>¿En qué horario prefiere ser atendido?</legend>
+                <select name="horario">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+
+        </form>
+    </div>
+
+    <div class="imagenes-fontanero-electricidad">
+        <img src="carpeta1/fontanero .jpg" width="35%" height="35%" class="imagen-fontanero-espacio">
+        <img src="carpeta1/electricidad.jpg" width="35%" height="35%" class="imagen-fontanero-espacio">
+    </div>
+
+</main>
+
+<footer>
+    <p>CONTACTANOS</p>
+    <p>solucionesgenerales.e.v@gmail.com</p>
+</footer>
+
+</body>
+</html>
